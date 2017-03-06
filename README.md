@@ -19,6 +19,9 @@ and within a view i.e. div (you use ng-controller which comes from the ng-app us
 - Inclusion of $scope in function parameters, leads to AngularJS recognizing that and injecting into the 
 function
 
-# Using other angular services
+# Using other angular services (Examples)
 - Angular-Messages (will give you something like form error handling pretty quick)
 - Angular-Resource (good at loading resources pretty quick)
+
+# We can use functions inside arrays
+var example = [1, '2', function() { alert('Hello'); }];
