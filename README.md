@@ -86,6 +86,8 @@ function logPerson() {
 vs
 
 ```
+
+```
 var maniApp = {};
 stevesApp.person = 'Mani';
 
@@ -93,14 +95,13 @@ maniApp.logPerson = function() {
 	console.log(maniApp.person);
 }
 ```
-
 # Functions and Strings
+
 ```
 var searchPeople = function searchPeople(firstName, lastName, height, age, occupation) {
 	return 'Mani Ali';
 }
 ```
-
 ```
 // We can also take a javascript function and convert it into a string
 var searchPeopleString = searchPeople.toString();
