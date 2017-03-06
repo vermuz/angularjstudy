@@ -47,8 +47,6 @@ var searchPeople = function searchPeople($scope, lastName, height, age, occupati
 	return 'Mani Ali';
 }
 ```
-
-
 # Scope Service
 - It is a big part of the thing that binds model to the view.
 - It is an object from scope service.
@@ -73,7 +71,9 @@ myApp.controller('mainController', function($scope, $log, $filter, $resource)
 # JS Tricks 
 
 # We can use functions inside arrays
+```
 var example = [1, '2', function() { alert('Hello'); }];
+```
 
 # Global Namespace
 # We can save our global namespace from pollution
