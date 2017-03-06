@@ -108,3 +108,23 @@ var searchPeopleString = searchPeople.toString();
 console.log(searchPeopleString);
 ```
 
+# Minification
+# Shrinking size of falls for faster downloads
+# file.js -> file.min.js
+
+```
+myApp.controller('mainController', ['$scope', '$log', function($scope, $log) {
+   $log.info($scope);
+}
+Note: Order does not matter
+```
+
+vs minified version of controller, but order matters now
+
+This is also the second way of doing dependency injection in Angular
+
+```
+myApp.controller('mainController', ["$scope", "$log", function(a,b)
+{b.info(a)}]);
+```
+
