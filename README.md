@@ -18,3 +18,7 @@ and within a view i.e. div (you use ng-controller which comes from the ng-app us
 - Scope will show a lot of functions, that is AngularJS doing dependency injection
 - Inclusion of $scope in function parameters, leads to AngularJS recognizing that and injecting into the 
 function
+
+# Using other angular services
+- Angular-Messages (will give you something like form error handling pretty quick)
+- Angular-Resource (good at loading resources pretty quick)
