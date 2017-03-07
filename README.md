@@ -38,8 +38,6 @@ function logPerson(person) {
 var john = new Person('Mani', 'Ali');
 logPerson(john);
 ```
-
-
 ```
 // If a function contains a certain name that angular knows about, you can inject using
 // that
@@ -109,8 +107,8 @@ console.log(searchPeopleString);
 ```
 
 # Minification
-# Shrinking size of falls for faster downloads
-# file.js -> file.min.js
+## Shrinking size of falls for faster downloads
+## file.js -> file.min.js
 
 ```
 myApp.controller('mainController', ['$scope', '$log', function($scope, $log) {
@@ -129,8 +127,14 @@ myApp.controller('mainController', ["$scope", "$log", function(a,b)
 ```
 
 # Interpolation
-# Creating a string by combining strings and placeholders
+## Creating a string by combining strings and placeholders
+
 In HTML,
 ```
 Hello {{ name }}!
 ```
+
+# Directive
+## Instruction to AngularJS to manipulate a piece of the DOM
+## e.g. add a class, hide this or create this
+
