@@ -208,12 +208,14 @@ The Javascript Event Loop + Angular Context (everything going on inside AngularJ
 If you add something to the scope, AngularJS is smart enough to keep track of that variable
 and so it adds watchers.
 
-Watchers (old value -> new value)
+Watchers (old value -> new value) 
 for every variable, function or anything on html page, AngularJS adds a watcher to the list
 
 To keep track of this watching for old and new, AngularJS makes use of Digest loop or cycle like
 the event loop but this is an Angular looTo keep track of this watching for old and new, 
-AngularJS makes use of Digest loop or cycle like, the event loop but this is an Angular loop.
+AngularJS makes use of Digest loop or cycle like, the event loop but this is an Angular 
+loop.
+
 When you enter into a digest loop, it checks every variable for its old and new value and if anything
 has changed - then it updates everywhere that is connected to it in the DOM. It runs again to check
 if all old values and new values are matched. This is also the missing bit between model and view in 
