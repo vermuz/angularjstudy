@@ -138,5 +138,46 @@ Hello {{ name }}!
 
 # Directive
 Instruction to AngularJS to manipulate a piece of the DOM
-e.g. add a class, hide this or create this
+e.g. add a class, hide this or create this. 
+In Javascript and JQuery we may have achieved, DOM manipulation
+in memory but Angular prefers to use directives.
+View can change the model (input textbox -> two way binding -> update model -> update the view)
 
+## Model
+
+So in our model, we had,
+
+```
+$scope.handle
+// This function defined our model
+$scope.lowercasehandle = function() {...} 
+
+# Usage
+myApp.controller('mainController', ['$scope', '$filter', function($scope,
+$filter) {
+    $scope.handle = '';
+    $scope.lowercasehandle = function() {
+        return $filter('lowercase')($scope.handle);
+    };
+}]);
+```
+
+```
+      <MODEL>
+        |
+        |
+   <Angular>
+<provides the bits inbetween>
+        |
+        |
+      <VIEW>
+```
+## View
+
+Using ng-model directive, we can have two way data binding.
+In our view, 
+
+```
+<input type="text" ng-model="handle" />
+<h1>twitter.com/{{ lowercasehandle() }}</h1>
+```
