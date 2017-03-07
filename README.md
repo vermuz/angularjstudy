@@ -70,7 +70,7 @@ myApp.controller('mainController', function($scope, $log, $filter, $resource)
 
 # AngularJS Notes 
 
-# We can use functions inside arrays
+# Functions inside arrays
 ```
 var example = [1, '2', function() { alert('Hello'); }];
 ```
@@ -181,3 +181,17 @@ In our view,
 <input type="text" ng-model="handle" />
 <h1>twitter.com/{{ lowercasehandle() }}</h1>
 ```
+
+## The Event Loop
+
+On key press, while we are listening for an event,
+we respond to it when it happens - it will do that everytime
+
+```
+var tb = document.getElementByIdI("name");
+tb.addEventListener("keypress",
+     function(event) {
+         console.log("Pressed");
+     });
+```
+
