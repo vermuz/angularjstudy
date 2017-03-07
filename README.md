@@ -68,7 +68,7 @@ myApp.controller('mainController', function($scope, $log, $filter, $resource)
 - Angular-Resource (good at loading resources pretty quick)
 
 
-# JS Tricks 
+# AngularJS Notes 
 
 # We can use functions inside arrays
 ```
@@ -128,3 +128,9 @@ myApp.controller('mainController', ["$scope", "$log", function(a,b)
 {b.info(a)}]);
 ```
 
+# Interpolation
+# Creating a string by combining strings and placeholders
+In HTML,
+```
+Hello {{ name }}!
+```
