@@ -76,7 +76,7 @@ var example = [1, '2', function() { alert('Hello'); }];
 ```
 
 # Global Namespace
-### We can save our global namespace from pollution
+We can save our global namespace from pollution
 ```
 var person = 'Mani';
 function logPerson() {
@@ -109,8 +109,8 @@ console.log(searchPeopleString);
 ```
 
 # Minification
-### Shrinking size of falls for faster downloads
-### file.js -> file.min.js
+Shrinking size of falls for faster downloads
+file.js -> file.min.js
 
 ```
 myApp.controller('mainController', ['$scope', '$log', function($scope, $log) {
@@ -129,7 +129,7 @@ myApp.controller('mainController', ["$scope", "$log", function(a,b)
 ```
 
 # Interpolation
-### Creating a string by combining strings and placeholders
+Creating a string by combining strings and placeholders
 
 In HTML,
 ```
@@ -137,6 +137,6 @@ Hello {{ name }}!
 ```
 
 # Directive
-### Instruction to AngularJS to manipulate a piece of the DOM
-### e.g. add a class, hide this or create this
+Instruction to AngularJS to manipulate a piece of the DOM
+e.g. add a class, hide this or create this
 
