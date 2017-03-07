@@ -185,7 +185,8 @@ In our view,
 ## The Event Loop
 
 On key press, while we are listening for an event,
-we respond to it when it happens - it will do that everytime
+we respond to it when it happens - it will do that everytime an event it is 
+listening for is triggered
 
 ```
 var tb = document.getElementByIdI("name");
