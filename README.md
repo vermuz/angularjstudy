@@ -267,7 +267,7 @@ myApp.controller('istcontroller',....)
 myApp.controller('seccontroller',....)
 ```
 
-## Multiple URLs
+## Multiple URLs and single page applications
 Using fragment identifier in single page applications
 You just download one page and then you use asynchronous
 requests via ajax or browser requests using fragment 
@@ -287,3 +287,17 @@ window.addEventListener('hashchange', functuon() {
      }
 });
 ```
+
+Angular can also keep track of your location and hence
+use a single page app to deliver a multiple page functionality
+
+```
+// Show location, address bar in console.log
+// AngularJS knows what the hash is
+myApp.controller('mainController', ['$scope', '$location', '$log',
+function($scope, $location, $log) {
+      $log.info($location.path());
+}]);
+```
+
+Angular builtin: angular-route.js which is a router
