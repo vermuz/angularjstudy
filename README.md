@@ -228,3 +228,41 @@ Hides an element in the dom until AngularJS has worked on it
 <div ng-cloak>{{ name }}</div>
 ```
 Available directives: https://docs.angularjs.org/api/ng/directive
+
+## XMLHTTPRequest Object
+An object capable of making internet requests on its own,
+API calls inside our application, but you need to use the Angular wrapper
+
+```
+$scope.$apply(function() {
+ var rulesreq = new XMLHttpRequest();
+ rulesreq.onreadystatechange = function () {
+ }
+}
+```
+However, it is preferred to do it the Angular way,
+
+```
+myApp.controller('mainController', ['$scope', '$filter', '$http', function ($scope,
+$filter, $http) {
+    $scope.handle = '';
+    $scope.lowercasehandle = function () {
+        return $filter('lowercase')($scope.handle);
+    };
+    $scope.characters = 5;
+    $http.get('/api')
+         .success(function (result) {
+         
+         })
+         .error(function (data, status) {
+             console.log(data);
+         })
+}
+
+## Multiple Controllers and multiple views
+
+```
+myApp.controller('istcontroller',....)
+myApp.controller('seccontroller',....)
+```
+
