@@ -221,4 +221,10 @@ has changed - then it updates everywhere that is connected to it in the DOM. It 
 if all old values and new values are matched. This is also the missing bit between model and view in 
 AngularJS.
 
+## ng-cloak
 
+Hides an element in the dom until AngularJS has worked on it
+```
+<div ng-cloak>{{ name }}</div>
+```
+Available directives: https://docs.angularjs.org/api/ng/directive
