@@ -267,3 +267,23 @@ myApp.controller('istcontroller',....)
 myApp.controller('seccontroller',....)
 ```
 
+## Multiple URLs
+Using fragment identifier in single page applications
+You just download one page and then you use asynchronous
+requests via ajax or browser requests using fragment 
+identifier, each hash value corresponds to a page
+
+```
+window.addEventListener('hashchange', functuon() {
+     if (window.location.hash === '#/bookmark/1') {
+         console.log('Page 1 is cool');
+     }
+     if (window.location.hash === '#/bookmark/2') {
+         console.log('Let me go get Page 2.');
+     }
+    
+     if (window.location.hash === '#/bookmark/3') {
+         console.log('Here is Page 3');
+     }
+});
+```
