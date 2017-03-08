@@ -258,6 +258,7 @@ $filter, $http) {
              console.log(data);
          })
 }
+```
 
 ## Multiple Controllers and multiple views
 
