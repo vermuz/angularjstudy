@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="en-us" ng-app="myApp">
     <head>
-        <title>Introduction to AngularJS</title>
+        <title>Learn and Understand AngularJS</title>
         <meta http-equiv="X-UA-Compatible" content="IE=Edge">
         <meta charset="UTF-8">
 
         <!-- load bootstrap and fontawesome via CDN -->
         <link rel="stylesheet" href="bootstrap.min.css" />
         <style>
-            html, body
+            html, body, input, select, textarea
             {
-                font-size: 1.1em;
+                font-size: 1.05em;
             }
         </style>
         
@@ -30,17 +30,18 @@
 
 				<ul class="nav navbar-nav navbar-right">
 					<li><a href="#"><i class="fa fa-home"></i> Home</a></li>
-					<li><a href="#/second"><i></i> Second</a></li>
+                    <li><a href="#/second"><i></i> Second</a></li>
+                    <li><a href="#/third"><i></i> Third</a></li>
 				</ul>
 			</div>
 			</nav>
 		</header>
 
         <div class="container">
-            <!-- Grab the html and place it here-->
+
             <div ng-view></div>
-	    </div>
-	</div>
+            
+		</div>
 
     </body>
 </html>

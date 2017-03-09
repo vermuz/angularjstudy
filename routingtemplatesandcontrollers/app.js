@@ -1,31 +1,50 @@
-
-
-// Use routing code
+/*global angular*/
 var myApp = angular.module('myApp', ['ngRoute']);
 
-
-// Inject a route provider
 myApp.config(function ($routeProvider) {
-    // Specify routes
-    $routeProvider
-    // Setup routes
-    .when('/', {
-        templateUrl: 'pages/main.html', // View, get this content via js
-        controller: 'mainController' // Model
-    })
     
-    .when('/second', {
-        templateUrl: 'pages/second.html', // View, get this content via js
-        controller: 'secondController' // Model
-    })
+    "use strict";
+    $routeProvider
+        .when('/', {
+            templateUrl: 'pages/main.html',
+            controller: 'mainController'
+        })
+    
+        .when('/second', {
+            templateUrl: 'pages/second.html',
+            controller: 'secondController'
+        })
+
+        // Pattern matching on :num
+        .when('/second/:num', {
+            templateUrl: 'pages/second.html',
+            controller: 'secondController'
+        })
+    
+        .when('/third', {
+            templateUrl: 'pages/third.html',
+            controller: 'thirdController'
+        });
 
 });
 
-myApp.controller('mainController', ['$scope', '$log', function($scope, $log) {
+myApp.controller('mainController', ['$scope', '$log', function ($scope, $log) {
+    
+    "use strict";
+    $scope.name = 'Main';
 
 }]);
 
+myApp.controller('secondController', ['$scope', '$log', '$routeParams', function ($scope, $log, $routeParams) {
+    
+    "use strict";
+    $scope.num = $routeParams.num || 1;
 
-myApp.controller('secondController', ['$scope', '$log', function($scope, $log) {
+}]);
+
+myApp.controller('thirdController', ['$scope', '$log', function ($scope, $log) {
+    
+    "use strict";
+    $scope.name = 'Third';
 
 }]);
