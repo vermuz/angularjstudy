@@ -19,9 +19,9 @@ myApp.controller('mainController', function() {
 
 # Dependency Injection
 - Giving a function an object
-- Rather can creating an object inside a function, you pass it to the function
-This is bad,
+- Rather can creating an object inside a function, you pass it to the function.
 
+This is bad,
 ```
 function logPerson() {
 	// Note: logPerson is dependent on variable john
