@@ -109,7 +109,7 @@ console.log(searchPeopleString);
 ```
 
 # Minification
-Shrinking size of falls for faster downloads
+Shrinking size of files for faster downloads
 file.js -> file.min.js
 
 ```
