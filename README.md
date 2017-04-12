@@ -1,6 +1,6 @@
 # angularjstudy
 
-My personal repo of notes on AngularJS.
+My personal repo of notes on AngularJS and JS in general
 
 # AngularJS 
 - Model view whatever
